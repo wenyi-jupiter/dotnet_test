@@ -1,19 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Entities\Cast.cs" />
-    <Compile Remove="Entities\Movie.cs" />
-    <Compile Remove="Entities\MovieCast.cs" />
-    <Compile Remove="Entities\Purchase.cs" />
-    <Compile Remove="Entities\Review.cs" />
-    <Compile Remove="Entities\Role.cs" />
-    <Compile Remove="Entities\Trailer.cs" />
-    <Compile Remove="Entities\User.cs" />
     <Compile Remove="ReporsitoryInterfaces\IMovieRepository.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
   </ItemGroup>
 
 </Project>
