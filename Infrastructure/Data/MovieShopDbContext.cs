@@ -75,7 +75,7 @@ namespace Infrastructure.Data
         //    builder.HasKey(t => t.UserId);
         //}
 
-        /**
+        
         private void ConfigurePurchase(EntityTypeBuilder<Purchase> builder)
         {
             builder.ToTable("Purchase");
@@ -84,7 +84,7 @@ namespace Infrastructure.Data
             builder.HasOne(p => p.User).WithMany(p => p.Purchases).HasForeignKey(p => p.UserId);
             builder.Property(p => p.TotalPrice).HasColumnType("decimal(18, 2)").HasDefaultValue(9.9m);
         }
-        **/
+        
         private void ConfigureUser(EntityTypeBuilder<User> builder)
         {
             builder.ToTable("User");

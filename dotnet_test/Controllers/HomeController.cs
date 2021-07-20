@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using ApplicationCore.Entities;
+using Infrastructure.Services;
 
 namespace dotnet_test.Controllers
 {
@@ -13,14 +15,20 @@ namespace dotnet_test.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
+
+
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }
+ 
 
         public IActionResult Index()
         {
-            return View();
+            var wenyi = new mymovie();
+            var movie = wenyi.getmv();
+            ViewBag.moviecount = movie.Count();
+            return View(movie);
         }
 
         public IActionResult Privacy()

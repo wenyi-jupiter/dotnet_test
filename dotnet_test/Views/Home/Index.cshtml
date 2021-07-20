@@ -1,8 +1,15 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model List<ApplicationCore.Entities.wenyimv>
+@{ 
+    ViewData["Title"] = "home wenyi";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h2>Top wenyi:@ViewBag.moviecount</h2>
+@foreach(var item in Model)
+            {
+                <div>
+                    @item.Id <br/>
+                    @item.Title<br/>
+                </div>
+       }
+
+@model List

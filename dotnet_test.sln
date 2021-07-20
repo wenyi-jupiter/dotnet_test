@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.31402.337
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieShopMVC", "dotnet_test\MovieShopMVC.csproj", "{0A3F51FB-75A6-40C6-A807-0E512FE778C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationCore", "ApplicationCore\ApplicationCore.csproj", "{FE242123-6176-4A69-9D06-74294EE819D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationCore", "ApplicationCore\ApplicationCore.csproj", "{FE242123-6176-4A69-9D06-74294EE819D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{378CF7E9-1882-46B8-99CD-F871ABA37658}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{378CF7E9-1882-46B8-99CD-F871ABA37658}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
